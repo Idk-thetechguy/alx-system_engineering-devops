@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1a | sort -d -f -n -k 1.1,1.1 -k 1.2,1.2 | sed ':a;N;$!ba;s/\n/, /g;s/,$/\n/'
